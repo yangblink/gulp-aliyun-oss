@@ -1,0 +1,26 @@
+{
+  "name": "gulp-aliyun-oss",
+  "version": "0.0.5",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/yqb1989/gulp-aliyun-oss",
+  "keywords": [
+    "oss",
+    "gulp",
+    "plugins"
+  ],
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ali-oss": "^4.4.4",
+    "co": "^4.6.0",
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {}
+}
