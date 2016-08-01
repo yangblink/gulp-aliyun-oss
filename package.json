@@ -6,7 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "license": "MIT",
   "homepage": "https://github.com/yqb1989/gulp-aliyun-oss",
+  "author": {
+    "name": "yanglbink",
+    "email": "yanglbink@gmail.com",
+    "url": "http://yanglbink.com"
+  },
   "keywords": [
     "oss",
     "gulp",
@@ -15,7 +21,6 @@
   "engines": {
     "node": ">= 4.0.0"
   },
-  "license": "MIT",
   "dependencies": {
     "ali-oss": "^4.4.4",
     "co": "^4.6.0",
