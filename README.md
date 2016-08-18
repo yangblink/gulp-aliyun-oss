@@ -4,9 +4,11 @@
 
 >参考[https://github.com/wefound/gulp-alioss](https://github.com/wefound/gulp-alioss)
 
+使用'ali-oss'库上传的文件会自动修改文件的'Content-Type'
+
 ## 安装
 ```shell
-npm install gup-aliyun-oss
+npm install gulp-aliyun-oss
 ```
 
 ## 示例
