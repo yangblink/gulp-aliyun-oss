@@ -1,6 +1,6 @@
 {
   "name": "gulp-aliyun-oss",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/yqb1989/gulp-aliyun-oss",
+  "repository": "yqb1989/gulp-aliyun-oss",
   "author": {
     "name": "yanglbink",
     "email": "yanglbink@gmail.com",

@@ -36,9 +36,10 @@ function oss(option) {
         };
         
         if(file.isBuffer()){
+          // console.log(filename);
           co(function* () {
             var result = yield client.put(getFileKey(), file.contents );
-            log('OK:', colors.green(filename));
+			log('OK:', colors.green(filename));
             cb(null, file);
           })
           .catch(function (err) {
