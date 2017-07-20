@@ -22,6 +22,11 @@ gulp.task('oss', function(cb){
         region: your-region,
         bucket: your-bucket,
         prefix: your-prefix,
+        ossOpt: {
+            headers: {
+              'Cache-Control': 'no-cache'
+            }
+        }
     };
     
     return gulp.src('*.js').pipe(oss(options));
