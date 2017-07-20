@@ -32,9 +32,9 @@ function oss(option) {
         var filename = file.relative;
         var self = this;
         var getFileKey = function(){
-            return option.prefix
+            return (option.prefix
                 + ((!option.prefix || (option.prefix[option.prefix.length - 1]) === '/') ? '' : '/')
-                + path.relative(file.base, file.path);
+                + path.relative(file.base, file.path)).replace(/\\/g,"/");
         };
         
         if(file.isBuffer()){
