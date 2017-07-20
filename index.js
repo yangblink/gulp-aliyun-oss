@@ -26,6 +26,8 @@ function oss(option) {
       bucket: option.bucket,
     });
 
+    var ossOpt = option.ossOpt || {};
+
     var stream = through2.obj(function (file, enc, cb) {
         var filename = file.relative;
         var self = this;
@@ -38,7 +40,7 @@ function oss(option) {
         if(file.isBuffer()){
           // console.log(filename);
           co(function* () {
-            var result = yield client.put(getFileKey(), file.contents );
+            var result = yield client.put(getFileKey(), file.contents, ossOpt);
 			log('OK:', colors.green(filename));
             cb(null, file);
           })
