@@ -34,7 +34,7 @@ function oss(option) {
         var getFileKey = function(){
             return option.prefix
                 + ((!option.prefix || (option.prefix[option.prefix.length - 1]) === '/') ? '' : '/')
-                + path.relative(file.base, file.path);
+                + path.posix.relative(file.base, file.path);
         };
         
         if(file.isBuffer()){
