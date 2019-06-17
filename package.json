@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp"
   },
   "license": "MIT",
   "homepage": "https://github.com/yqb1989/gulp-aliyun-oss",
@@ -23,10 +23,11 @@
     "node": ">= 4.0.0"
   },
   "dependencies": {
-    "ali-oss": "^4.4.4",
+    "ali-oss": "^6.1.1",
     "co": "^4.6.0",
+    "gulp": "^3.9.1",
     "gulp-util": "^3.0.7",
+    "md5": "^2.2.1",
     "through2": "^2.0.1"
-  },
-  "devDependencies": {}
+  }
 }
